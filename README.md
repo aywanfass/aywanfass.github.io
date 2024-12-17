@@ -4,13 +4,13 @@
 
 [![Netbeans|](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Apache_NetBeans_Logo.svg/64px-Apache_NetBeans_Logo.svg.png)](https://fr.wikipedia.org/wiki/NetBeans) [![HTML|](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/64px-HTML5_logo_and_wordmark.svg.png?uselang=fr)](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language) [![CSS|](https://cdn-icons-png.flaticon.com/64/5968/5968242.png)](https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade) [![Bootstrap|](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/64px-Bootstrap_logo.svg.png?uselang=fr)](https://fr.wikipedia.org/wiki/Bootstrap_(framework))         [![Git|](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/120px-Git-logo.svg.png?uselang=fr)](https://fr.wikipedia.org/wiki/Git)                  [![GitHub|](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/64px-GitHub_Invertocat_Logo.svg.png?uselang=fr)](https://fr.wikipedia.org/wiki/GitHub)
 
-- NetBeans : Environnement de développement intégré (IDE) utilisé pour ce projet
-- HTML : Langage de description utilisé pour concevoir les pages web
-- CSS : Langage de style utilisé pour mettre en forme les pages web
-- Bootstrap : Framework graphique utilisé pour faciliter la création de pages web (utilisation d'une base de règles
+- **NetBeans** : Environnement de développement intégré (IDE) utilisé pour ce projet
+- **HTML** : Langage de description utilisé pour concevoir les pages web
+- **CSS** : Langage de style utilisé pour mettre en forme les pages web
+- **Bootstrap** : Framework graphique utilisé pour faciliter la création de pages web (utilisation d'une base de règles
 CSS existantes) 
-- Git : Logiciel de gestion de version
-- GitHub : Forge logicielle en ligne utilisant Git
+- **Git** : Logiciel de gestion de version
+- **GitHub** : Forge logicielle en ligne utilisant Git
 
 2. Pour l'épreuve E5
 
