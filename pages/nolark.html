@@ -12,18 +12,19 @@
 
     <!-- Bootstrap CSS -->
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <title>Portfolio d'Aywan FASS (BTS SIO 2026)</title>
+    <link rel="icon" href="../favicon.ico" />
+    <link
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
-    <link href="css\accueil.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <link rel="icon" href="favicon.ico" />
-    <title>Portfolio d'Aywan FASS (BTS SIO 2026)</title>
+    <link href="../css/realisations.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <nav class="navbar navbar-dark bg-primary fixed-top navbar-expand-md">
@@ -37,20 +38,20 @@
         >
           <span class="sr-only">Navigation raccourcie</span>☰
         </button>
-        <a class="navbar-brand" href="index.html">Portfolio Numérique</a>
+        <a class="navbar-brand" href="../index.html">Portfolio Numérique</a>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active nav-item">
-              <a href="index.html" class="nav-link"
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link"
                 ><span class="fa fa-home"></span> Accueil</a
               >
             </li>
             <li class="nav-item">
-              <a href="pages/cv.html" class="nav-link"
+              <a href="cv.html" class="nav-link"
                 ><span class="fa fa-id-badge"></span> CV</a
               >
             </li>
-            <li class="dropdown nav-item">
+            <li class="active dropdown nav-item">
               <a
                 href="#"
                 class="dropdown-toggle nav-link"
@@ -65,16 +66,10 @@
                   En autonomie
                 </li>
                 <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="pages/portfolio.html"
+                  <a role="menuitem" href="portfolio.html"
                     >Mon Portfolio</a
                   >
                 </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="pages/nolark.html"
-                    >Nolark</a
-                  >
-                </li>
-                <li role="presentation" class="dropdown-item">
                 <li role="presentation" class="dropdown-divider"></li>
                 <li role="presentation" class="dropdown-header dropdown-item">
                   En entreprise
@@ -146,7 +141,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a href="pages/contact.html" class="nav-link"
+              <a href="contact.html" class="nav-link"
                 ><span class="fa fa-envelope"></span> Me contacter</a
               >
             </li>
@@ -154,27 +149,60 @@
         </div>
       </div>
     </nav>
-    <div class="jumbotron">
+    <section class="jumbotron text-center">
       <div class="container">
-        <img
-          id="maPhoto"
-          class="float-left rounded"
-          src="images/Aywanfass.jpg"
-          alt="photo d'aywan fass"
-        />
-
-        <p>
-          Je m'appelle Aywan FASS, j'ai 18 ans et ce site a pour vocation de me
-          présenter en tant que personne, en tant qu'étudiant et candidat à
-          l'obtention du BTS SIO (Services Informatiques aux Organisations) et
-          en tant que futur professionnel de l'informatique.
+        <h1 class="jumbotron-heading">Création de mon portfolio numérique</h1>
+        <p class="lead text-muted">
+          Cette activité m'a permis de développer une application Android avec
+          différents modes de persistances (locales et distantes) et m'a appris
+          à gérer les adapters. J'ai également pu connaître le mode de
+          déploiement d'une application Android.
         </p>
+      </div>
+    </section>
 
-        <p>
-          <a class="btn btn-primary btn-lg" href="pages/cv.html" role="button"
-            >En savoir plus »</a
-          >
-        </p>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                class="card-img-top"
+                src="../images/dev.png"
+                alt="IHM Coach"
+              />
+              <div class="card-body">
+                <p class="card-text">Construction de la page d'acceuil</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                class="card-img-top"
+                src="../images/git.png"
+                alt="Structuration MVC"
+              />
+              <div class="card-body">
+                <p class="card-text">Stucturation du Github</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                class="card-img-top"
+                src="../images/portfolioNetbeans.png"
+                alt="Adapters"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Présentation de  l'arborecence
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Emplacement pour le contenu principal de la page -->
