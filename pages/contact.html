@@ -155,23 +155,29 @@
             </div>
         </nav>
         <section class="jumbotron">
-            <form action="mailto:aywan.fass@gmail.com">
-                <div class=" container form-group">
-                    <label for="exampleFormControlInput1">Nom</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Dupont">
-                </div>
-                <div class=" container form-group">
-                    <label for="exampleFormControlInput1">Adresse Mail</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@example.com">
-                </div>
-                <div class=" container form-group">
-                    <label for="exampleFormControlTextarea1">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <form action="mailto:aywan.fass@gmail.com" method="get" enctype="text/plain">
+                <div class="container form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" class="form-control" id="name" name="Nom" placeholder="Dupont" required>
                 </div>
                 <div class="container form-group">
-                <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <label for="email">Adresse Mail</label>
+                    <input type="email" class="form-control" id="email" name="Email" placeholder="nom@example.com" required>
+                </div>
+                <div class="container form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" class="form-control" id="subject" name="Subject" placeholder="Votre sujet" required>
+                </div>
+                <div class="container form-group">
+                    <label for="description">Message</label>
+                    <textarea class="form-control" id="description" name="Description" rows="3" placeholder="Votre message..." required></textarea>
+                </div>
+                <div class="container form-group">
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
                 </div>
             </form>
+
+
         </section>
 
         <!-- Emplacement pour le contenu principal de la page -->
