@@ -29,7 +29,7 @@ const projects: Project[] = [
     id: 2,
     title: "Nolark",
     description:
-      "Application fait dans le cadre du BTS SIO qui m'a permit de me familiariser avec HTML/CSS et PHP",
+      "Application fait dans le cadre du BTS SIO qui m'a permis de me familiariser avec HTML/CSS et PHP",
     tags: ["HTML", "CSS", "PHP"],
     image: "/images/PageNolark.png",
     githubUrl: "https://github.com/aywanfass/nolark",
