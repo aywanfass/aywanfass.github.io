@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn, slideInLeft, slideInRight, scaleIn } from "../utils/animations";
 
 type HeroProps = {
   title?: string;
@@ -13,7 +15,7 @@ type HeroProps = {
 export default function Hero({
   title = "Aywan Fass",
   subtitle = "Développeur web & Étudiant BTS SIO",
-  description = `Je m'appelle Aywan FASS, 18 ans. Ce site présente mon parcours,
+  description = `Ce site présente mon parcours,
   mes projets et mes objectifs en tant qu’étudiant en BTS SIO et futur professionnel de l’informatique.`,
   ctaLabel = "Voir mon CV",
   ctaHref = "#cv",
@@ -21,9 +23,15 @@ export default function Hero({
   photoAlt = "Portrait d’Aywan Fass",
 }: HeroProps) {
   return (
-    <section className="jumbotron-like py-5" aria-label="Présentation">
+    <motion.section 
+      className="jumbotron-like py-5" 
+      aria-label="Présentation"
+      initial="hidden"
+      animate="visible"
+      variants={fadeIn as any}
+    >
       <div className="container d-flex align-items-start gap-4">
-        <img
+        <motion.img
           id="maPhoto"
           className="rounded img-fluid shadow-sm"
           src={photoSrc}
@@ -31,21 +39,41 @@ export default function Hero({
           width={160}
           height={160}
           loading="eager"
+          variants={scaleIn as any}
+          whileHover={{ scale: 1.1, rotate: 5 }}
         />
         <div>
-          <h1 className="h2 mb-2">{title}</h1>
-          <p className="text-muted mb-3">{subtitle}</p>
-          <p className="mb-4">{description}</p>
-          <a
-            className="btn btn-primary btn-lg"
-            href={ctaHref}
-            role="button"
+          <motion.h1 
+            className="h2 mb-2"
+            variants={slideInLeft as any}
+          >
+            {title}
+          </motion.h1>
+          <motion.p 
+            className="text-muted mb-3"
+            variants={slideInLeft as any}
+          >
+            {subtitle}
+          </motion.p>
+          <motion.p 
+            className="mb-4"
+            variants={slideInLeft as any}
+          >
+            {description}
+          </motion.p>
+          <motion.a 
+            className="btn btn-primary btn-lg" 
+            href={ctaHref} 
+            role="button" 
             aria-label={ctaLabel}
+            variants={scaleIn as any}
+            whileHover={{ scale: 1.05, boxShadow: "0 10px 20px rgba(0,0,0,0.2)" }}
+            whileTap={{ scale: 0.95 }}
           >
             {ctaLabel}
-          </a>
+          </motion.a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

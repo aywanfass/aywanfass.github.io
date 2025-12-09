@@ -39,3 +39,79 @@ correspondantes
 un emploi
 - Cela permettra de me faire référencer par les moteurs de recherches (là aussi si on me recherche suite à ma 
 rencontre ou à la reception de mon CV)
+
+# Configuration du formulaire de contact
+
+## EmailJS Setup
+
+Vous avez déjà créé un service EmailJS ? Suivez ces étapes pour récupérer vos identifiants :
+
+### 1. Récupérer votre Public Key
+
+1. Connectez-vous à [EmailJS Dashboard](https://dashboard.emailjs.com/)
+2. Cliquez sur **"Account"** dans le menu de gauche
+3. Copiez votre **Public Key** (aussi appelé User ID)
+
+### 2. Récupérer votre Service ID
+
+1. Dans le dashboard, cliquez sur **"Email Services"**
+2. Vous verrez votre service (Gmail, Outlook, etc.) déjà créé
+3. Copiez le **Service ID** affiché à côté du nom du service
+
+### 3. Créer et récupérer votre Template ID
+
+1. Dans le dashboard, cliquez sur **"Email Templates"**
+2. Cliquez sur **"Create New Template"**
+3. Configurez votre template avec ces variables :
+   ```
+   Subject: {{subject}}
+   
+   De: {{from_name}}
+   Email: {{from_email}}
+   
+   Message:
+   {{message}}
+   ```
+4. Sauvegardez et copiez le **Template ID**
+
+### 4. Intégrer dans le code
+
+Dans le fichier `frontend/src/pages/Contact.tsx`, ligne 22-24, remplacez :
+
+```typescript
+service_id: "YOUR_SERVICE_ID",     // Remplacez par votre Service ID
+template_id: "YOUR_TEMPLATE_ID",   // Remplacez par votre Template ID
+user_id: "YOUR_PUBLIC_KEY",        // Remplacez par votre Public Key
+```
+
+### Exemple de configuration complète
+
+```typescript
+service_id: "service_abc123",      // Exemple: service_xyz456
+template_id: "template_def456",    // Exemple: template_abc789
+user_id: "user_ghi789xyz",         // Exemple: user_def012abc
+```
+
+### Alternative : Utiliser mailto (recommandé pour GitHub Pages)
+
+Si vous préférez ne pas utiliser EmailJS, le formulaire actuel utilise déjà la fonction `mailto:` qui ouvre directement le client email de l'utilisateur. Aucune configuration supplémentaire n'est nécessaire.
+
+## CV en PDF
+
+Pour que le téléchargement du CV fonctionne :
+
+1. Créez un CV au format PDF (utilisez Word, Google Docs, Canva, etc.)
+2. Nommez-le `cv-aywan-fass.pdf`
+3. Placez-le dans le dossier `frontend/public/`
+4. Vérifiez que le fichier est bien un PDF valide (ouvrez-le pour tester)
+
+**Structure des fichiers :**
+```
+frontend/
+├── public/
+│   ├── cv-aywan-fass.pdf  ← Votre CV ici
+│   └── images/
+└── src/
+```
+
+**Important :** Le fichier doit être un vrai PDF, pas un fichier vide ou corrompu.
