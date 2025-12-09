@@ -1,344 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aywan Fassassi - Développeur & Designer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background"></div>
-        <nav class="navbar">
-            <div class="logo">Aywan Fass</div>
-            <ul class="nav-links">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact" class="btn-primary">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </nav>
-        
-        <div class="hero-content">
-            <div class="hero-text">
-                <span class="hero-greeting">Développeur web & Étudiant BTS SIO</span>
-                <h1 class="hero-title">Aywan Fass</h1>
-                <p class="hero-subtitle">Développeur web & Étudiant BTS SIO</p>
-                <p class="hero-description">
-                    Ce site présente mon parcours, mes projets et mes objectifs en tant qu'étudiant en BTS SIO et futur professionnel de l'informatique.
-                </p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn-primary">Voir mon CV</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <span>💻</span>
-                </div>
-                <div class="floating-card card-2">
-                    <span>🎓</span>
-                </div>
-                <div class="floating-card card-3">
-                    <span>⚡</span>
-                </div>
-            </div>
-        </div>
-        
-        <div class="scroll-indicator">
-            <span></span>
-        </div>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Numérique — React</title>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">À propos</span>
-                <h2 class="section-title">Étudiant du BTS SIO</h2>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead-text">
-                        J'ai choisi le BTS SIO en alternance pour progresser tout en m'intégrant à la vie active. Cette formation me permet d'apprendre l'autonomie, la collaboration à distance et la gestion d'objectifs professionnels.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <h3>BTS SIO</h3>
-                            <p>En alternance</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>Option B</h3>
-                            <p>SLAM</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>2024</h3>
-                            <p>Promotion</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Bootstrap 5 (CSS) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Expertise</span>
-                <h2 class="section-title">Mes Compétences</h2>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="category-icon">💻</div>
-                    <h3>Frontend</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span data-level="95%">HTML/CSS</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="--level: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span data-level="90%">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="--level: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span data-level="85%">React</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="--level: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span data-level="80%">Vue.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="--level: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="category-icon">⚙️</div>
-                    <h3>Backend</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span data-level="88%">Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="--level: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span data-level="85%">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="--level: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span data-level="80%">PHP</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="--level: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span data-level="90%">SQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="--level: 90%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="category-icon">🎨</div>
-                    <h3>Design</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span data-level="92%">UI/UX</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="--level: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span data-level="88%">Figma</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="--level: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span data-level="85%">Adobe XD</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="--level: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span data-level="80%">Photoshop</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="--level: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Font Awesome 4.7 (mêmes classes que ton ancien site) -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Portfolio</span>
-                <h2 class="section-title">Projets Récents</h2>
-            </div>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="#" class="btn-view">Voir le projet</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                        </div>
-                        <h3>E-commerce Platform</h3>
-                        <p>Une plateforme e-commerce complète avec gestion des paiements et tableau de bord administrateur.</p>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="#" class="btn-view">Voir le projet</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>Vue.js</span>
-                            <span>Firebase</span>
-                        </div>
-                        <h3>Task Management App</h3>
-                        <p>Application de gestion de tâches collaborative avec synchronisation en temps réel.</p>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="#" class="btn-view">Voir le projet</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>Next.js</span>
-                            <span>API</span>
-                        </div>
-                        <h3>Weather Dashboard</h3>
-                        <p>Dashboard météo interactif avec visualisations de données et prévisions détaillées.</p>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="#" class="btn-view">Voir le projet</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>React Native</span>
-                            <span>Mobile</span>
-                        </div>
-                        <h3>Fitness Tracking App</h3>
-                        <p>Application mobile de suivi fitness avec plans d'entraînement personnalisés.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script type="module" crossorigin src="/assets/index-DGCWC1P7.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-0VdHEGyj.css">
+  </head>
+  <body>
+    <div id="root"></div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Contact</span>
-                <h2 class="section-title">Contactez-moi</h2>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Discutons de votre projet</h3>
-                    <p>Je suis toujours ouvert à de nouvelles opportunités et collaborations. N'hésitez pas à me contacter !</p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="method-icon">📧</div>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:aywan@example.com">aywan@example.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="method-icon">📱</div>
-                            <div>
-                                <h4>Téléphone</h4>
-                                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="method-icon">🌐</div>
-                            <div>
-                                <h4>Réseaux sociaux</h4>
-                                <div class="social-links">
-                                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                                    <a href="#" aria-label="GitHub">GitHub</a>
-                                    <a href="#" aria-label="Twitter">Twitter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Envoyer le message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+    <!-- App React -->
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Aywan Fassassi. Tous droits réservés.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    <!-- Bootstrap 5 (JS bundle) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,21 @@
+/* Légère harmonisation visuelle */
+.navbar {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.jumbotron-like {
+  background: #f2f2f5;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+#maPhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+.footer-copy {
+  color: #6c757d;
+  margin: 24px 0 40px 0;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>404</title>
+    <meta http-equiv="refresh" content="0; url=./#/" />
+    <script>
+      // Fallback SPA GitHub Pages: redirige toute 404 vers la racine hash
+      (function () {
+        var l = window.location;
+        if (!l.hash) {
+          l.replace(
+            l.origin +
+              l.pathname.replace(/404\\.html$/, "") +
+              "#/" +
+              l.search +
+              l.hash
+          );
+        }
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
