@@ -1,271 +1,344 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="Portfolio d'Aywan FASS - BTS SIO SLAM" />
-    <meta name="author" content="Aywan FASS" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link href="css\accueil.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <link rel="icon" href="favicon.ico" />
-    <title>Portfolio d'Aywan FASS (BTS SIO 2026)</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-dark bg-primary fixed-top navbar-expand-md">
-      <div class="container">
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbar"
-          aria-controls="navbar"
-        >
-          <span class="sr-only">Navigation raccourcie</span>☰
-        </button>
-        <a class="navbar-brand" href="index.html">Portfolio Numérique</a>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active nav-item">
-              <a href="index.html" class="nav-link"
-                ><span class="fa fa-home"></span> Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="pages/cv.html" class="nav-link"
-                ><span class="fa fa-id-badge"></span> CV</a
-              >
-            </li>
-            <li class="dropdown nav-item">
-              <a
-                href="#"
-                class="dropdown-toggle nav-link"
-                data-toggle="dropdown"
-                role="button"
-              >
-                <span class="fa fa-list-alt"></span> Réalisations
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li role="presentation" class="dropdown-header dropdown-item">
-                  En autonomie
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="pages/portfolio.html"
-                    >Mon Portfolio</a
-                  >
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="pages/nolark.html"
-                    >Nolark</a
-                  >
-                </li>
-                <li role="presentation" class="dropdown-item">
-                <li role="presentation" class="dropdown-divider"></li>
-                <li role="presentation" class="dropdown-header dropdown-item">
-                  En entreprise
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="#">Projet de 1ère année</a>
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="#">Projet de 2ème année</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown nav-item">
-              <a
-                href="#"
-                class="dropdown-toggle nav-link"
-                data-toggle="dropdown"
-                role="button"
-              >
-                <span class="fa fa-graduation-cap"></span>Jury E6 BTS SIO
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li class="dropdown-header dropdown-item" role="presentation">
-                  Documentations contexte
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="#">Présentation</a>
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="#">Application</a>
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="#">Missions à réaliser</a>
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="#">Annexes</a>
-                </li>
-                <li role="presentation" class="dropdown-divider"></li>
-                <li role="presentation" class="dropdown-header dropdown-item">
-                  Fiches d'examen
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="#">Situation professionnelle n°1</a>
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="#">Situation professionnelle n°2</a>
-                </li>
-                <li role="presentation" class="dropdown-divider"></li>
-                <li role="presentation" class="dropdown-header dropdown-item">
-                  Démonstrations
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="#">Démo SP n°1</a>
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="#">Démo SP n°2</a>
-                </li>
-                <li role="presentation" class="dropdown-divider"></li>
-                <li role="presentation" class="dropdown-header dropdown-item">
-                  Codes sources
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="#">Sources SP n°1</a>
-                </li>
-                <li role="presentation" class="dropdown-item">
-                  <a role="menuitem" href="#">Sources SP n°2</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="pages/contact.html" class="nav-link"
-                ><span class="fa fa-envelope"></span> Me contacter</a
-              >
-            </li>
-          </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aywan Fassassi - Développeur & Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <nav class="navbar">
+            <div class="logo">Aywan Fass</div>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-greeting">Développeur web & Étudiant BTS SIO</span>
+                <h1 class="hero-title">Aywan Fass</h1>
+                <p class="hero-subtitle">Développeur web & Étudiant BTS SIO</p>
+                <p class="hero-description">
+                    Ce site présente mon parcours, mes projets et mes objectifs en tant qu'étudiant en BTS SIO et futur professionnel de l'informatique.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">Voir mon CV</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <span>💻</span>
+                </div>
+                <div class="floating-card card-2">
+                    <span>🎓</span>
+                </div>
+                <div class="floating-card card-3">
+                    <span>⚡</span>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-    <div class="jumbotron">
-      <div class="container">
-        <img
-          id="maPhoto"
-          class="float-left rounded"
-          src="images/Aywanfass.jpg"
-          alt="photo d'aywan fass"
-        />
-
-        <p>
-          Je m'appelle Aywan FASS, j'ai 18 ans et ce site a pour vocation de me
-          présenter en tant que personne, en tant qu'étudiant et candidat à
-          l'obtention du BTS SIO (Services Informatiques aux Organisations) et
-          en tant que futur professionnel de l'informatique.
-        </p>
-
-        <p>
-          <a class="btn btn-primary btn-lg" href="pages/cv.html" role="button"
-            >En savoir plus »</a
-          >
-        </p>
-      </div>
-    </div>
-    <!-- Emplacement pour le contenu principal de la page -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <h2>Étudiant du BTS SIO</h2>
-            <p>
-              J'ai choisi de suivre le BTS SIO en alternance car je souhaitais
-              pourvoir progresser tout en m'intégrant a la vie active, apprendre
-              à être autonome, pouvoir utiliser les outils de collaboration à
-              distance et devenir plus responsable en étant capable de me fixer
-              moi-même des contraintes, des limites et des objectifs à atteindre
-              !
-            </p>
-            <p>
-              <a
-                class="btn btn-secondary"
-                href="https://bts-sio.lyc-bonaparte.fr/"
-                target="_blank"
-                role="button"
-                >En savoir plus »</a
-              >
-            </p>
-          </div>
-          <div class="col-lg-4">
-            <h2>Le BTS SIO</h2>
-            <p>
-              Passionné d'informatique depuis mon plus jeune âge, j'aime
-              apprendre à faire de nouvelles choses avec mon ordinateur, mon
-              smartphone ou ma tablette. Un Geek ? Oui assurément ! Mais
-              j'aimerais maintenant passer au niveau au-dessus et devenir un
-              vrai Nerd, dans le bon sens du terme ! Après mon bac, le BTS SIO
-              s'est présenté comme une évidence. Avec 60% d'Informatique "pure",
-              13% d'Économie, management et droit de l'informatique, 9%
-              d'Anglais, 9% de culture générale et 9% de Maths, je savais que
-              cette formation allait me mettre le pied à l'étrier pour
-              poursuivre ensuite dans cette voie et devenir informaticien !
-            </p>
-            <p>
-              <a
-                class="btn btn-secondary"
-                href="https://fr.wikipedia.org/wiki/Brevet_de_technicien_supérieur_-_Services_informatiques_aux_organisations"
-                target="_blank"
-                role="button"
-                >En savoir plus »</a
-              >
-            </p>
-          </div>
-          <div class="col-lg-4">
-            <h2>Option B SLAM</h2>
-            <p>
-              "Solutions Logicielles et Applications Métiers" est l'option qui
-              m'a séduit&nbsp;! Travailler en équipe à la satisfaction de
-              besoins d'un client, définir des spécifications, faire des tests,
-              corriger des bugs, faire de la maintenance, veiller à la sécurité
-              des données à caractère personnel... tout en apprenant les bases
-              du métier de développeur : modélisation des données avec Merise et
-              UML, programmation objet avec Java, C# et PHP, conception de bases
-              de données sous PostgreSQL et MySQL, réalisation de composants
-              logiciels avec Symfony, gestion de projet, méthodes agiles...
-              J'étais sûre que ça serait fait pour moi !
-            </p>
-            <p>
-              <a
-                class="btn btn-secondary"
-                href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
-                target="_blank"
-                role="button"
-                >En savoir plus »</a
-              >
-            </p>
-          </div>
+        
+        <div class="scroll-indicator">
+            <span></span>
         </div>
-        <hr />
-        <p class="text-center" id="copyright">© Aywan FASS 2026</p>
-      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">À propos</span>
+                <h2 class="section-title">Étudiant du BTS SIO</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead-text">
+                        J'ai choisi le BTS SIO en alternance pour progresser tout en m'intégrant à la vie active. Cette formation me permet d'apprendre l'autonomie, la collaboration à distance et la gestion d'objectifs professionnels.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3>BTS SIO</h3>
+                            <p>En alternance</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Option B</h3>
+                            <p>SLAM</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>2024</h3>
+                            <p>Promotion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Expertise</span>
+                <h2 class="section-title">Mes Compétences</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">💻</div>
+                    <h3>Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span data-level="95%">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="--level: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span data-level="90%">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="--level: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span data-level="85%">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span data-level="80%">Vue.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="--level: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-icon">⚙️</div>
+                    <h3>Backend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span data-level="88%">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="--level: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span data-level="85%">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span data-level="80%">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="--level: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span data-level="90%">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="--level: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-icon">🎨</div>
+                    <h3>Design</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span data-level="92%">UI/UX</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="--level: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span data-level="88%">Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="--level: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span data-level="85%">Adobe XD</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span data-level="80%">Photoshop</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="--level: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Projets Récents</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-view">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                        <h3>E-commerce Platform</h3>
+                        <p>Une plateforme e-commerce complète avec gestion des paiements et tableau de bord administrateur.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-view">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                        </div>
+                        <h3>Task Management App</h3>
+                        <p>Application de gestion de tâches collaborative avec synchronisation en temps réel.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-view">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>API</span>
+                        </div>
+                        <h3>Weather Dashboard</h3>
+                        <p>Dashboard météo interactif avec visualisations de données et prévisions détaillées.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-view">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Mobile</span>
+                        </div>
+                        <h3>Fitness Tracking App</h3>
+                        <p>Application mobile de suivi fitness avec plans d'entraînement personnalisés.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Contactez-moi</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Discutons de votre projet</h3>
+                    <p>Je suis toujours ouvert à de nouvelles opportunités et collaborations. N'hésitez pas à me contacter !</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:aywan@example.com">aywan@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">🌐</div>
+                            <div>
+                                <h4>Réseaux sociaux</h4>
+                                <div class="social-links">
+                                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                                    <a href="#" aria-label="GitHub">GitHub</a>
+                                    <a href="#" aria-label="Twitter">Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aywan Fassassi. Tous droits réservés.</p>
+        </div>
     </footer>
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
