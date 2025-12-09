@@ -29,7 +29,7 @@ const projects: Project[] = [
     id: 2,
     title: "Nolark",
     description:
-      "Application fait dans le cadre du BTS SIO qui m'a permis de me familiariser avec HTML/CSS et PHP",
+      "Application faite dans le cadre du BTS SIO qui m'a permis de me familiariser avec HTML/CSS et PHP",
     tags: ["HTML", "CSS", "PHP"],
     image: "/images/PageNolark.png",
     githubUrl: "https://github.com/aywanfass/nolark",
@@ -39,7 +39,7 @@ const projects: Project[] = [
     id: 3,
     title: "Application de signature de document",
     description:
-      "Application web fait avec le framework Symfony qui permet a la RH de la CPAM du VAR de deposer des documents (Reglement interieur, charte IA), de les versionner et de les mettre en ligne afin que tout les agents de la CPAM puissent les signer. ",
+      "Application web faite avec le framework Symfony qui permet à la RH de la CPAM du VAR de déposer des documents (Réglement intérieur, charte IA), de les versionner et de les mettre en ligne afin que tout les agents de la CPAM puissent les signer. ",
     tags: ["Symfony", "SQLServer", "PHP", "Stimulus", "Twig"],
     image: "/images/signaCharte.png", 
     category: "entreprise",
