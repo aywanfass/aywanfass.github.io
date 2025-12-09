@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { staggerContainer, slideUp, hoverScale } from "../utils/animations";
 
