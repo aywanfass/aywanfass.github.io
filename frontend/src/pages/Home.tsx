@@ -4,9 +4,16 @@ import Sections from "../components/Sections";
 
 export default function Home() {
   return (
-    <>
-      <Hero />
-      <Sections />
-    </>
+    <main role="main" aria-label="Page d'accueil">
+      {/* Skip to main content for accessibility */}
+      <a href="#main-content" className="visually-hidden-focusable">
+        Aller au contenu principal
+      </a>
+
+      <div id="main-content">
+        <Hero />
+        <Sections />
+      </div>
+    </main>
   );
 }

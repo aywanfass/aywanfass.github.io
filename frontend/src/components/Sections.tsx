@@ -2,89 +2,80 @@ import React from "react";
 
 export default function Sections() {
   return (
-    <section className="container my-5">
+    <section
+      className="container my-5"
+      aria-label="Présentation de la formation"
+    >
       <div className="row g-4">
-        <div className="col-lg-4">
-          <h2>Étudiant du BTS SIO</h2>
+        <article className="col-lg-4">
+          <h2 className="h4">Étudiant du BTS SIO</h2>
           <p>
-            J'ai choisi de suivre le BTS SIO en alternance car je souhaitais
-            pouvoir progresser tout en m'intégrant à la vie active, apprendre à
-            être autonome, pouvoir utiliser les outils de collaboration à
-            distance et devenir plus responsable en étant capable de me fixer
-            moi‑même des contraintes, des limites et des objectifs à atteindre !
+            J'ai choisi le BTS SIO en alternance pour progresser tout en
+            m'intégrant à la vie active. Cette formation me permet d'apprendre
+            l'autonomie, la collaboration à distance et la gestion d'objectifs
+            professionnels.
           </p>
           <p>
             <a
               className="btn btn-secondary"
               href="https://bts-sio.lyc-bonaparte.fr/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               role="button"
+              aria-label="En savoir plus sur le BTS SIO (ouvre un nouvel onglet)"
             >
               En savoir plus »
             </a>
           </p>
-        </div>
+        </article>
 
-        <div className="col-lg-4">
-          <h2>Le BTS SIO</h2>
+        <article className="col-lg-4">
+          <h2 className="h4">Le BTS SIO</h2>
           <p>
-            Passionné d'informatique depuis mon plus jeune âge, j'aime apprendre
-            à faire de nouvelles choses avec mon ordinateur, mon smartphone ou
-            ma tablette. Un Geek ? Oui assurément ! Mais j'aimerais maintenant
-            passer au niveau au‑dessus et devenir un vrai Nerd, dans le bon sens
-            du terme ! Après mon bac, le BTS SIO s'est présenté comme une
-            évidence. Avec 60% d'Informatique "pure", 13% d'économie, management
-            et droit de l'informatique, 9% d'Anglais, 9% de culture générale et
-            9% de Maths, je savais que cette formation allait me mettre le pied
-            à l'étrier pour poursuivre ensuite dans cette voie et devenir
-            informaticien !
+            Passionné d'informatique depuis toujours, j'ai choisi le BTS SIO pour
+            transformer ma passion en compétences professionnelles. Avec 60% d'
+            informatique pure, 13% d'économie et droit, 9% d'anglais, et des
+            modules en culture générale et mathématiques, cette formation couvre
+            tous les fondamentaux du métier d'informaticien.
           </p>
           <p>
             <a
               className="btn btn-secondary"
               href="https://fr.wikipedia.org/wiki/Brevet_de_technicien_sup%C3%A9rieur_-_Services_informatiques_aux_organisations"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               role="button"
+              aria-label="En savoir plus sur le BTS SIO (ouvre un nouvel onglet)"
             >
               En savoir plus »
             </a>
           </p>
-        </div>
+        </article>
 
-        <div className="col-lg-4">
-          <h2>Option B SLAM</h2>
+        <article className="col-lg-4">
+          <h2 className="h4">Option B SLAM</h2>
           <p>
-            "Solutions Logicielles et Applications Métiers" est l'option qui m'a
-            séduit ! Travailler en équipe à la satisfaction de besoins d'un
-            client, définir des spécifications, faire des tests, corriger des
-            bugs, faire de la maintenance, veiller à la sécurité des données à
-            caractère personnel... tout en apprenant les bases du métier de
-            développeur : modélisation des données avec Merise et UML,
-            programmation objet avec Java, C# et PHP, conception de bases de
-            données sous PostgreSQL et MySQL, réalisation de composants
-            logiciels avec Symfony, gestion de projet, méthodes agiles...
-            J'étais sûr que ça serait fait pour moi !
+            L'option "Solutions Logicielles et Applications Métiers" correspond
+            parfaitement à mes aspirations. Elle couvre le travail en équipe, la
+            définition de spécifications, les tests, la maintenance et la sécurité
+            des données. J'y apprends la modélisation (Merise, UML), la
+            programmation objet (Java, C#, PHP), les bases de données
+            (PostgreSQL, MySQL) et les méthodes agiles.
           </p>
           <p>
             <a
               className="btn btn-secondary"
               href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               role="button"
+              aria-label="En savoir plus sur l'option SLAM (ouvre un nouvel onglet)"
             >
               En savoir plus »
             </a>
           </p>
-        </div>
+        </article>
       </div>
-
-      <hr />
-      <p className="text-center footer-copy" id="copyright">
-        © Aywan FASS 2026
-      </p>
     </section>
   );
 }
